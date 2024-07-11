@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
+		<i class="fa-duotone fa-camera-retro" style="color: #1c7ed6;"></i>
+		<script src="https://kit.fontawesome.com/e5b57fda91.js" crossorigin="anonymous"></script>
+		<title>Books Store</title>
+	</head>
+	<body>
+<nav>
+	<div class="logo">Book Store website</div>
+
+	<ul class="list">
+		<li><a href="#Home">Home</a></li>
+		<li><a href="{%url 'about' %}">About Us</a></li>
+		<li><a href="{%url 'registration'%}">Registration</a></li>
+		<li><a href="{%url 'login' %}">Login</a></li>
+		<li><a href="{%url 'contuct' %}">Contact Us</a></li>
+	</ul>
+
+<div class="humburger">
+	<i class="fa-solid fa-bars humburger-bars"></i>
+</div>
+
+</nav>
+		<div class="p1"><p><h1>Recomended For You</h1>
+Lorem ipsum dolor sit amet, consectetusr adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+</p>
+</div>
+	<container class="books">
+         {% for book in booklist %}
+			<div class="box2">
+
+
+				<img src= "{{book.image.url}}">
+				<h3>{{book.title}}</h3>
+				<h2>{{book.author}}</h2>
+				<h4>{{book.price}}</h4>
+				<button id="click">Buy NOW</button>
+			</div>
+        {%endfor%}
+
+	</container>
+
+<div class="services">
+	<div><h1>Quick Delivery</h1>
+Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do<br> eiusmod tempor
+</div>
+
+<div><h1>Secure Payment</h1>
+Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do <br>eiusmod tempor
+</div>
+
+<div><h1>Best Quality</h1>
+Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do <br>eiusmod tempor
+</div>
+
+<div><h1>Return Guarantee</h1>
+Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do <br>eiusmod tempor
+</div>
+</div>
+
+<h1>Books On Sale</h1>
+<div class="collection">
+     {% for book in booklist %}
+    <div class="box3">
+
+
+				<img src= "{{book.image.url}}">
+				<h3>{{book.title}}</h3>
+				<h2>{{book.author}}</h2>
+				<h4>{{book.price}}</h4>
+
+			</div>
+    {%endfor%}
+</div>
+
+</div>
+
+<div class="gallary/book13"><h1>Featured Product</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+book
+BES</p><br><br>
+<div class="Product">
+
+	<div> {% for book in productlist %}
+			<div class="box20">
+
+				<img src= "{{book.image.url}}">
+				<h3>{{book.title}}</h3>
+				<h2>{{book.action}}</h2>
+				<button id="click">Buy NOW</button>
+
+			</div>
+        {%endfor%}
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam,
+		quis nostrud exercitation ullamco laboris .</p></div>
+</div>
+</div>
+
+
+<h1>Special Offers</h1>
+<div class="offer">
+	<div>
+<img src="gallary/book14.jpg"><br><p><h3>SECONDS[PART 1]<br><h5>BIOGRAPHY
+  THRILLER
+  HORROR</h5><br>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod
+  tempor <br>incididunt ut labore.<br><button  id="click">Add To Cart</button></p>
+	</div>
+
+	<div>
+<img src="gallary/book15.jpg"><br><p><h3>TERRIBLE MADNESS<br><h5>BIOGRAPHY
+  THRILLER
+  HORROR</h5><br>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod
+  tempor <br>incididunt ut labore.<br><button  id="click">Add To Cart</button></p>
+	</div>
+
+	<div>
+<img src="gallary/book16.jpg"><br><p><h3>REWORK<br><h5>BIOGRAPHY
+  THRILLER
+  HORROR</h5><br>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod
+  tempor <br>incididunt ut labore.<br><button  id="click">Add To Cart</button></p>
+	</div>
+</div>
+
+
+<h1>Latest News</h1>
+<div class="latest">
+<div class="news"><img src="gallary/book17.jpg"><h2>Benefits of reading:<br>Smart,Diligent,Happy,<br>Intelligent</h2><p><br>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod
+  tempor <br>incididunt ut labore</p><br>25 JUNE, 2024</div>
+
+  	<div><img src="gallary/book18.jpg"><h2>Benefits of reading:<br>10 Things you must know to<br> improve your <br>reading skills</h2><p><br>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod
+  tempor <br>incididunt ut labore</p><br>25 JUNE, 2024</div>
+
+
+  <div><img src="gallary/book19.jpg"><h2>We must know why reading is<br>important for children</h2><p><br>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod
+  tempor <br>incididunt ut labore<br>incididunt ut labore</p><br>25 JUNE, 2024</div>
+
+
+  <div><img src="gallary/book20.jpg"><h2>Benefits of reading:<br>10 Things you must know to<br> improve your <br>reading skills</h2><p><br>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod
+  tempor <br>incididunt ut labore</p><br>25 JUNE, 2024</div>
+</div>
+
+<box><i class="fa-solid fa-users"></i></box>
+
+<div id="Subs"><h1>Subscribe our newsletter for newest <br>books updates</h1><div class="email"><input type="email" name="Email" placeholder="Your Email Adress
+	" required><button>Subscribe</button>
+</div>
+</div>
+
+
+<div class="fotter">
+
+		<div>
+			<h2><i class="fa-solid fa-book"></i>Book Land</h2>
+				<p>Book Store Website</p>
+				<p>Bookland is a Book Store<br> Ecommerce Website Template by<br> DexignZone lorem ipsum dolor sit</p>
+		</div>
+
+
+
+		<div>
+				<h3>Our Links</h3>
+				<ul>
+					<li>About Us</li>
+					<li>Contact Us</li>
+					<li>Privacy Policy</li>
+					<li>Princing Table</li>
+					<li>FAQ</li>
+				</ul>
+		</div>
+
+
+		<div>
+
+				<h3>Bookland ?</h3>
+				<ul>
+					<li>Services</li>
+					<li>Book Details</li>
+					<li>Blog Details</li>
+					<li>Shop</li>
+				</ul>
+		</div>
+
+
+		<div>
+				<h3>Resources</h3>
+				<ul>
+					<li>Download</li>
+					<li>Help Center</li>
+					<li>Shop Cart</li>
+					<li>Login</li>
+					<li>Partner</li>
+				</ul>
+		</div>
+
+
+		<div>
+				<h3>Get in Touch With Us</h3>
+				<ul>
+					<li>832 Thompson Drive, San <br>Fransisco CA 94107,US</li>
+					<li>+123 345123 556<br>+123 345123 556</li>
+					<li>support@bookland.id<br>info@bookland.id</li>
+				</ul>
+		</div>
+
+	</div>
+
+
+<script type="text/javascript" src="books.js"></script>
+	</body>
+	</html>

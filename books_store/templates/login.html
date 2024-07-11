@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
+	<i class="fa-duotone fa-camera-retro" style="color: #1c7ed6;"></i>
+		<script src="https://kit.fontawesome.com/e5b57fda91.js" crossorigin="anonymous"></script>
+	<title>login</title>
+</head>
+<body>
+
+	<nav>
+	<div>Book Store website</div>
+
+	<ul class="list">
+		<li><a href="{%url 'index'%}">Home</a></li>
+		<li><a href="{%url 'about'%}">About Us</a></li>
+		<li><a href="{%url 'registration'%}">Registration</a></li>
+		<li><a href="{%url 'login'%}">Login</a></li>
+		<li><a href="{%url 'contuct'%}">Contact Us</a></li>
+	</ul>
+
+</nav>
+
+	<div class="hero"><h1>login</h1></div>
+<div class="login">
+	<div class="box2">
+		<box2>
+			<h2>NEW CUSTOMER</h2>
+			<p>By creating an account with our store, you will be able to move<br> through the checkout process faster, store multiple shipping<br> addresses, view and track your orders in your account and more.</p>
+			<button>CREATE AN ACCOUNT</button>
+		</box2>
+	</div>
+
+	<div class="box4">
+		<h2>LOGIN</h2>
+		<p>If you have an account with us, please log in.</p>
+		<h4>E-MAIL*</h4>
+		<input type="email" name="Email" placeholder="Your Email Id"  required>
+
+		<h4>PASSWORD*</h4>
+		<input type="password" name="Password" placeholder="Type Password"  required>
+		<br>
+		<br>
+		<button>Login</button><i class="fa-solid fa-unlock"></i> Forgot Password
+	</div>
+</div>
+
+<div class="fotter">
+
+		<div>
+			<h2><i class="fa-solid fa-book"></i>Book Land</h2>
+				<p>Book Store Website</p>
+				<p>Bookland is a Book Store<br> Ecommerce Website Template by<br> DexignZone lorem ipsum dolor sit</p>
+		</div>
+
+
+
+		<div>
+				<h3>Our Links</h3>
+				<ul>
+					<li>About Us</li>
+					<li>Contact Us</li>
+					<li>Privacy Policy</li>
+					<li>Princing Table</li>
+					<li>FAQ</li>
+				</ul>
+		</div>
+
+
+		<div>
+
+				<h3>Bookland ?</h3>
+				<ul>
+					<li>Bookland</li>
+					<li>Services</li>
+					<li>Book Details</li>
+					<li>Blog Details</li>
+					<li>Shop</li>
+				</ul>
+		</div>
+
+
+		<div>
+				<h3>Resources</h3>
+				<ul>
+					<li>Download</li>
+					<li>Help Center</li>
+					<li>Shop Cart</li>
+					<li>Login</li>
+					<li>Partner</li>
+				</ul>
+		</div>
+
+
+		<div>
+				<h3>Get in Touch With Us</h3>
+				<ul>
+					<li>832 Thompson Drive, San <br>Fransisco CA 94107,US</li>
+					<li>+123 345123 556<br>+123 345123 556</li>
+					<li>support@bookland.id<br>info@bookland.id</li>
+				</ul>
+		</div>
+
+
+	</div>
+</div>
+</body>
+</html>
